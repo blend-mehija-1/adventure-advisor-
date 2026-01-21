@@ -1,0 +1,282 @@
+*{
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #023047;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.main-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-navigation > ul > li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+
+.menu > li > a{
+    font-size: 20px;
+    color: #eee;
+}
+
+#categories-nav{
+    font-size: 20px;
+    color: #eee;
+}
+
+#logo{
+    color: #eee;
+}
+
+/* Dropdowns */
+
+.menu{
+    list-style: none;
+}
+
+.menu > li > a:hover{
+    color: #219EBC;;
+}
+
+.dropdown{
+    position: relative;
+}
+
+#destinations:hover{
+    color: #219EBC;
+}
+
+
+
+.continent{
+    text-decoration: none;
+    color: #eee;
+    font-size: 17px;
+}
+
+.continent:hover{
+    color: #219EBC;;
+}
+
+#contact{
+    color: #219EBC;
+}
+
+.dropdown-menu{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    background-color: #023047;
+    width: 200px;
+}
+
+.dropdown-menu li {
+    padding: 15px 20px;
+}
+
+.menu > li.dropdown:hover > a {
+    color: #219EBC;; 
+}
+
+.continent{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.adventure-type{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #eee;
+    font-size: 17px;
+}
+
+.dropdown-menu > li:hover > .adventure-type{
+    color: #3498DB;;
+}
+
+/* Contact Section */
+
+
+
+
+.top-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #053750;
+    color: #fff;
+    background-image: linear-gradient(rgba(3, 49, 71, 0.8), rgba(3, 49, 71, 0.8)), url('../images/worldMap.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.top-text h1{
+    font-size: 50px;
+    margin: 0px;
+}
+
+.top-text p{
+    width: 50%;
+    font-size: 15px;
+    margin: 10px 0 30px 0;
+}
+
+.top-text button{
+    background-color: rgb(29, 29, 29);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: transform 0.25s ease;
+}
+
+.top-text button:hover{
+    transform: scale(1.05);
+}
+
+.top-text button a{
+    color: #fff;
+    font-size: 20px;
+
+}   
+
+/* Form  */
+
+.contact-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.contact-form h2{
+    font-size: 40px;
+    margin: 0px;
+}
+
+
+.form-inputs{
+    margin-bottom: 10px;
+    padding: 20px 25px;
+    border: 1px solid #cccccc84;
+    border-radius: 6px;
+}
+
+.names-input{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#first-name{
+    padding: 20px 29px;
+}
+#last-name{
+    padding: 20px 29px;
+}
+
+.submit-btn{
+    margin-top: 5px;
+}
+
+.submit-btn button{
+    background-color: #023047;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Map Section */
+
+.map {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.map h3{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.map iframe {
+    width: 70%;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+    margin: 130px 0; 
+    margin: auto;
+}
+
+footer {
+  background-color: #023047;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer ul li a {
+  color: #dbeafe;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+
+footer p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #dbeafe;
+}

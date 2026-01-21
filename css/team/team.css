@@ -1,0 +1,222 @@
+*{
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #023047;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.main-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-navigation > ul > li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+
+.menu > li > a{
+    font-size: 20px;
+    color: #eee;
+}
+
+#categories-nav{
+    font-size: 20px;
+    color: #eee;
+}
+
+#logo{
+    color: #eee;
+}
+
+/* Dropdowns */
+
+.menu{
+    list-style: none;
+}
+
+.menu > li > a:hover{
+    color: #219EBC;;
+}
+
+.dropdown{
+    position: relative;
+}
+
+#destinations:hover{
+    color: #219EBC;
+}
+
+
+
+.continent{
+    text-decoration: none;
+    color: #eee;
+    font-size: 17px;
+}
+
+.continent:hover{
+    color: #219EBC;;
+}
+
+
+.dropdown-menu{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    background-color: #023047;
+    width: 200px;
+}
+
+.dropdown-menu li {
+    padding: 15px 20px;
+}
+
+.menu > li.dropdown:hover > a {
+    color: #219EBC;; 
+}
+
+.continent{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.adventure-type{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #eee;
+    font-size: 17px;
+}
+
+.dropdown-menu > li:hover > .adventure-type{
+    color: #3498DB;;
+}
+
+
+
+/* Categories */
+
+
+.adventure-type{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #eee;
+    font-size: 17px;
+}
+
+.dropdown-menu > li:hover > .adventure-type{
+    color: #3498DB;;
+}
+
+/* Start */
+
+section {
+    padding: 60px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.content{
+    width: 40%;
+    margin: auto 120px;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #023047;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #404242;
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.image img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.go-back-btn{
+  display: inline-block;
+  padding: 10px 16px;
+  background: #023047;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.go-back-btn:hover{
+  transform: translateY(-1px);
+}
+
+.go-back-btn:active{
+  transform: translateY(0px);
+}
+
+/* Footer */
+
+footer {
+  background-color: #023047;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer ul li a {
+  color: #dbeafe;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+
+footer p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #dbeafe;
+}
+
+

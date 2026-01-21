@@ -1,0 +1,249 @@
+*{
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #023047;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.main-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-navigation > ul > li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+
+.menu > li > a{
+    font-size: 20px;
+    color: #eee;
+}
+
+#destinations-nav{
+    font-size: 20px;
+    color: #eee;
+}
+
+#logo{
+    color: #eee;
+}
+
+/* Dropdowns */
+
+.menu{
+    list-style: none;
+}
+
+.menu > li > a:hover{
+    color: #219EBC;;
+}
+
+.dropdown{
+    position: relative;
+}
+
+#destinations:hover{
+    color: #219EBC;
+}
+
+
+
+.continent{
+    text-decoration: none;
+    color: #eee;
+    font-size: 17px;
+}
+
+.continent:hover{
+    color: #219EBC;;
+}
+
+
+.dropdown-menu{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    background-color: #023047;
+    width: 200px;
+}
+
+.dropdown-menu li {
+    padding: 15px 20px;
+}
+
+.menu > li.dropdown:hover > a {
+    color: #219EBC;; 
+}
+
+.continent{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#cta{
+    color: #219EBC;
+}
+
+.adventure-type{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #eee;
+    font-size: 17px;
+}
+
+.dropdown-menu > li:hover > .adventure-type{
+    color: #3498DB;;
+}
+
+
+/* CTA Section */
+
+
+.CTA-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 60px 80px;
+    width: 80%;
+    gap: 150px;
+    margin: 0 auto;
+}
+
+.CTA-text{
+    width: 50%;
+    margin: 0;
+    text-align: left;
+    
+}
+
+.CTA-text h1{
+    color: #023047;
+    font-size: 54px;
+    margin-bottom: 20px;
+
+}
+
+.CTA-text p{
+    color: #023047;
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* CTA Form */
+
+
+.CTA-form{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.form-options{
+    display: flex;
+    flex-direction: column;
+}
+
+.label-text{
+    color: #023047;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.form-options select{
+    width: 350px;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    
+}
+
+.form-options input{
+    width: 325px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+
+}
+
+.CTA-form button{
+    width: 350px;
+    height: 45px;
+    background-color: #063c4b;
+    color: #f3f3f3;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#date-input{
+    border: 1px solid #272727;
+}
+
+.CTA-form label{
+    color: #023047;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #023047;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer ul li a {
+  color: #dbeafe;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+
+footer p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #dbeafe;
+}

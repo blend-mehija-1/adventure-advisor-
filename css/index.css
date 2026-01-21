@@ -1,0 +1,505 @@
+*{
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #023047;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.main-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-navigation > ul > li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+
+.menu > li > a{
+    font-size: 20px;
+    color: #eee;
+}
+
+#home{
+    color: #219EBC;
+}
+
+#categories-nav{
+    font-size: 20px;
+    color: #eee;
+}
+
+#logo{
+    color: #eee;
+}
+
+/* Dropdowns */
+
+.menu{
+    list-style: none;
+}
+
+.menu > li > a:hover{
+    color: #219EBC;;
+}
+
+.dropdown{
+    position: relative;
+}
+
+#destinations:hover{
+    color: #219EBC;
+}
+
+#categories-nav:hover{
+    color: #219EBC;
+}
+
+
+.continent{
+    text-decoration: none;
+    color: #eee;
+    font-size: 17px;
+}
+
+.continent:hover{
+    color: #219EBC;;
+}
+
+
+.dropdown-menu{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    background-color: #023047;
+    width: 200px;
+}
+
+.dropdown-menu li {
+    padding: 15px 20px;
+}
+
+.menu > li.dropdown:hover > a {
+    color: #219EBC;; 
+}
+
+.continent{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.adventure-type{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #eee;
+    font-size: 17px;
+}
+
+.dropdown-menu > li:hover > .adventure-type{
+    color: #3498DB;;
+}
+
+/* background image */
+
+
+
+section[aria-label="Background-section"] {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;       
+    text-align: center;
+
+    background-image: 
+    linear-gradient(rgba(63, 112, 198, 0.2),
+     rgba(63, 112, 198, 0.2)) ,
+     url(../images/scenic_landscape_hd-2560x1440.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}        
+
+
+section[aria-label="Background-section"] > h1{
+   font-size: 60px;
+   color: #fdfdfd; 
+}
+
+
+
+section[aria-label="Background-section"] > a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+    
+}
+
+section[aria-label="Background-section"] > a:hover{
+    transform: scale(1.1);
+}
+
+.background-text{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.background-text.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* backed info */
+
+.backed-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    width: 80%;      
+    margin: 0 auto;  
+}
+
+
+.backed-info-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    margin-top: 70px;
+    
+
+}
+
+.backed-info-cards > h3{
+    margin: 10px 10px;
+    color: #023047;
+}
+
+.backed-info-cards > p{
+    text-align: center;
+    margin: 0px;
+}
+
+
+
+.backed-info-icons{
+    background-color: #023047;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+/* backed info transition */
+
+.backed-info-cards{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.backed-info-cards.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Destinations section */
+
+.destinations{
+    width: 80%;
+    margin: 50px auto;
+    margin-top: 80px;
+}
+
+.destinations > p{
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.destinations > h2{
+    color: #023047;
+    font-size: 24px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.destinations-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    
+}
+
+.destinations-card{
+    border: rgb(216, 216, 216) 1px solid;
+    border-radius: 16px;
+}
+
+.destinations-card > img{
+    width: 275px;
+    height: 160px;
+    border-radius: 16px 16px 0 0;
+}
+
+.destinations-card > h2{
+    color: #023047;
+    padding: 0px 20px 0px 20px;
+    font-weight: bolder;
+    font-size: 40px;
+    margin: 0px;
+}
+.destinations-country{
+    background-color: #82d8ee9d;
+    width: fit-content;
+    border-radius: 4px;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+.destinations-country > p{
+    font-size: 12px;
+    padding: 5px;
+    margin: 0px;
+    color: #014d73;
+    font-weight: 600;
+}
+
+.destinations-card > h3{
+    padding: 0px 20px 10px 20px;
+    margin: 5px 0px 0px 0px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #012638;
+}
+
+.price-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 20px 20px 20px;
+    margin-top: 30px;
+}
+
+#canada-price{
+    margin-top: 5px;
+}
+
+.destinations-from{
+    font-size: 10px;
+    margin: 0px;
+    font-weight: 500;
+    color: #023047;
+}
+
+.destinations-price{
+    font-size: 18px;
+    color: #023047;
+}
+
+.price-button > button{
+    background-color: #023047;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.price-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.destinations-buttons{
+    font-size: 30px;
+    color: #023047;
+    cursor: pointer;
+    background-color: rgba(148, 196, 255, 0.801);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#prev{
+    visibility: hidden;
+}
+
+/* Categories section */
+
+.categories{
+    width: 80%;
+    margin: 50px auto;
+    margin-top: 80px;
+}
+
+.categories > p{
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.categories > h2{
+    color: #023047;
+    font-size: 24px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.categories-card h3{
+    color: #023047;
+    padding: 20px 0px 10px 10px;
+    margin: 0px;
+}
+
+.categories-card p{
+    padding: 20px 10px 10px 0px;
+    margin: 0px;
+    color: #012638
+}
+
+.categories-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.categories-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px; 
+
+}
+
+.square{
+    width: 275px;
+    height: 275px;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.25s ease-in-out;
+}
+
+.square > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.square:hover{
+    transform: scale(1.05);
+}
+
+/* CTA section */
+.CTA{
+    width: 80%;
+    margin: 50px auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #014d73;
+    border-radius: 16px;
+}
+
+
+.CTA-text > h2{
+    color: white;
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.CTA-text > p{
+    color: white;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.CTA button{
+    background-color: #023047;
+    border: none;
+    margin-right: 30px;
+    padding: 15px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.CTA button a{
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+}
+
+.CTA button:hover{
+    transform: scale(1.1);
+}
+
+/* Footer section */
+footer {
+  background-color: #023047;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer ul li a {
+  color: #dbeafe;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+
+footer p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #dbeafe;
+}
+
+

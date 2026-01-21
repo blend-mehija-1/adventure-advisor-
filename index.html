@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Advisor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-navigation">
+            <a href="html/index.html"><h1 id="logo">Adventure Advisor</h1></a>
+            <ul class="menu">
+                <li><a href="html/index.html" id="home">Home</a></li>
+                <li class="dropdown">
+                    <a href="html/destinations.html" id="destinations">Destinations ▾</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown">
+                            <a class="continent" href="html/continents/africa.html">Africa</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="continent" href="html/continents/america.html">America</a>
+                        </li>
+
+                        <li class="dropdown" id="dropdown-europe">
+                            <a class="continent" href="html/continents/europe.html">Europe</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="continent" href="html/continents/asia.html">Asia</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="html/categories.html" id="categories-nav">Categories ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="html/categories.html#beach-section" class="adventure-type">Beach</a></li>
+                        <li><a href="html/categories.html#ski-section" class="adventure-type">Ski</a></li>
+                        <li><a href="html/categories.html#hike-section" class="adventure-type">Hike</a></li>
+                        <li><a href="html/categories.html#camp-section" class="adventure-type">Camp</a></li>
+                    </ul>
+                </li>
+                <li><a href="html/CTA.html">Plan your trip</a></li>
+                <li><a href="html/about.html">About</a></li>
+                <li><a href="html/contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section aria-label="Background-section">
+        <h1 class="background-text">Plan Your Next Adventure</h1>
+        <a class="background-text" href="html/CTA.html">Plan trip</a>
+    </section>
+    
+    <!-- <hr> -->
+    <section class="backed-info">
+        <div class="backed-info-cards">
+            <img class="backed-info-icons" src="images/check.svg" alt="">
+            <h3>Backed by travel experts</h3>
+            <p>Book with confidence using trusted reviews from real travelers.</p>
+        </div>
+        <div class="backed-info-cards">
+            <img class="backed-info-icons" src="images/bed.svg" alt="">
+            <h3>Stays for every style</h3>
+            <p>Find the perfect stay from a wide range of hotels designed for every traveler.</p>
+        </div>
+        <div class="backed-info-cards">
+            <img class="backed-info-icons" src="images/money.svg" alt="">
+            <h3>Best rates around</h3>
+            <p>Compare prices across trusted platforms to secure the best deal available.</p>
+        </div>
+    </section>
+
+    <section class="destinations">
+        <h2>Destinations to Love</h2>
+        <p>Travel to places you’ll fall in love with.</p>
+        <div class="destinations-cards">  
+            <p class="destinations-buttons" id="prev">&lt;</p>
+            <div class="destinations-card">
+
+
+                <img src="images/perea.jpg" alt="">
+                <h2>1</h2>
+                <div class="destinations-country">
+                    <p>Beach Getaways</p>
+                </div>
+                <h3>Perea, Greece</h3>
+                <div class="price-button">
+                    <p class="destinations-from">from <b class="destinations-price">$365</b></p>
+                    <button><a href="html/destinations/perea.html">Explore More</a></button>
+                </div>
+            </div>  
+            <div class="destinations-card">
+                
+                <img src="images/home-dolomites.jpg" alt="">
+                <h2>2</h2>
+                <div class="destinations-country">
+                    <p>Hiking Trails</p>
+                </div>
+                <h3>Dolomites, Italy</h3>
+                <div class="price-button">
+                    <p class="destinations-from">from <b class="destinations-price">$1550</b></p>
+                    <button><a href="html/destinations/dolomites.html">Explore More</a></button>
+                </div>
+            </div>  
+            <div class="destinations-card">
+                <img src="images/home-whistler.avif" alt="">
+                <h2>3</h2>
+                <div class="destinations-country">
+                    <p>Ski Adventures</p>
+                </div>
+                <h3>Whistler Blackcomb, Canada</h3>
+                <div class="price-button" id="canada-price">
+                    <p class="destinations-from">from <b class="destinations-price">$365</b></p>
+                    <button><a href="html/destinations/whister.html">Explore More</a></button>
+                </div>
+            </div>  
+            <div class="destinations-card">
+                <img src="images/home-lake.jpg" alt="">
+                <h2>4</h2>
+                <div class="destinations-country">
+                    <p>Camping Escapes</p>
+                </div>
+                <h3>Lake District, England</h3>
+                <div class="price-button">
+                    <p class="destinations-from">from <b class="destinations-price">$365</b></p>
+                    <button><a href="html/destinations/lake-england.html">Explore More</a></button>
+                </div>
+            </div>  
+            <div class="destinations-card">
+                <img src="images/home-wadirum.avif" alt="">
+                <h2>5</h2>
+                <div class="destinations-country">
+                    <p>Camping Escapes</p>
+                </div>
+                <h3>Wadi Rum, Jordan</h3>
+                <div class="price-button">
+                    <p class="destinations-from">from <b class="destinations-price">$365</b></p>
+                    <button><a href="html/destinations/wadirum.html">Explore More</a></button>
+                </div>
+            </div>  
+            <div class="destinations-card">
+                <img src="images/home-zermatt.jpg" alt="">
+                <h2>6</h2>
+                <div class="destinations-country">
+                    <p>Ski Adventures</p>
+                </div>
+                <h3>Zermatt, Switzerland</h3>
+                <div class="price-button">
+                    <p class="destinations-from">from <b class="destinations-price">$365</b></p>
+                    <button><a href="html/destinations/zermatt.html">Explore More</a></button>
+                </div>
+            </div>  
+            <div class="destinations-card">
+                <img src="images/home-antalya.avif" alt="">
+                <h2>7</h2>
+                <div class="destinations-country">
+                    <p>Beach Getaways</p>
+                </div>
+                <h3>Antalya, Turkey</h3>
+                <div class="price-button">
+                    <p class="destinations-from">from <b class="destinations-price">$365</b></p>
+                    <button><a href="html/destinations/antalya.html">Explore More</a></button>
+                </div>
+            </div>  
+            <div class="destinations-card">
+                <img src="images/home-meteora.jpg" alt="">
+                <h2>8</h2>
+                <div class="destinations-country">
+                    <p>Hiking Trails</p>
+                </div>
+                <h3>Meteora, Greece</h3>
+                <div class="price-button">
+                    <p class="destinations-from">from <b class="destinations-price">$365</b></p>
+                    <button><a href="html/destinations/meteora.html">Explore More</a></button>
+                </div>
+            </div>  
+            <div class="destinations-card">
+                <img src="images/home-chamonix.jpg" alt="">
+                <h2>9</h2>
+                <div class="destinations-country">
+                    <p>Ski Adventures</p>
+                </div>
+                <h3>Chamonix, France</h3>
+                <div class="price-button">
+                    <p class="destinations-from">from <b class="destinations-price">$365</b></p>
+                    <button><a href="html/destinations/chamonix.html">Explore More</a></button>
+                </div>
+            </div>  
+            <div class="destinations-card">
+                <img src="images/home-split.webp" alt="">
+                <h2>10</h2>
+                <div class="destinations-country">
+                    <p>Beach Getaways</p>
+                </div>
+                <h3>Split, Croatia</h3>
+                <div class="price-button">
+                    <p class="destinations-from">from <b class="destinations-price">$365</b></p>
+                    <button><a href="html/destinations/split.html">Explore More</a></button>
+                </div>
+            </div>  
+            <div class="destinations-card">
+                <img src="images/home-ksamil.jpg" alt="">
+                <h2>11</h2>
+                <div class="destinations-country">
+                    <p>Beach Getaways</p>
+                </div>
+                <h3>Ksamil, Albania</h3>
+                <div class="price-button">
+                    <p class="destinations-from">from <b class="destinations-price">$365</b></p>
+                    <button><a href="html/destinations/ksamil.html">Explore More</a></button>
+                </div>
+            </div>  
+            <div class="destinations-card">
+                <img src="images/home-gjeravica.jpg" alt="">
+                <h2>12</h2>
+                <div class="destinations-country">
+                    <p>Hiking Trails</p>
+                </div>
+                <h3>Gjeravica, Kosova</h3>
+                <div class="price-button">
+                    <p class="destinations-from">from <b class="destinations-price">$365</b></p>
+                    <button><a href="html/destinations/gjeravica.html">Explore More</a></button>
+                </div>
+            </div>  
+            
+            
+            <p class="destinations-buttons" id="next">&gt;</p>
+            
+            
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Top Picks by Type</h2>
+        <p>Find what you’re looking for with just a click.</p>
+        <div class="categories-cards">
+            <div class="categories-card">
+                <a href="html/categories.html#beach-section">
+                    <div class="square">
+                        <img src="images/beach.jpg" alt="">
+                    </div>
+                    <div class="categories-text">
+                        <h3>Beach</h3>
+                        <p>★★★★★</p>
+                    </div>
+                </a>
+            </div>
+            <div class="categories-card">
+                <a href="html/categories.html#hike-section">
+                    <div class="square">
+                        <img src="images/hike.jpg" alt="">
+                    </div>
+                    <div class="categories-text">
+                        <h3>Hike</h3>
+                        <p>★★★★★</p>
+                    </div>
+                </a>
+            </div>
+            <div class="categories-card">
+                <a href="html/categories.html#camp-section">
+                    <div class="square">
+                        <img src="images/camp.jpeg" alt="">
+                    </div>
+                    <div class="categories-text">
+                        <h3>Camp</h3>
+                        <p>★★★★★</p>
+                    </div>
+                </a>
+            </div>
+            <div class="categories-card">
+                <a href="html/categories.html#ski-section">
+                    <div class="square">
+                        <img src="images/ski.avif" alt="">
+                    </div>
+                    <div class="categories-text">
+                        <h3>Ski</h3>
+                        <p>★★★★★</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="CTA">
+        <div class="CTA-text">
+            <h2>Ready to Plan Your Next Adventure?</h2>
+            <p>Find destinations that match your budget and style.</p>
+        </div>
+        <button><a href="html/CTA.html">Start Planning</a></button>
+    </section>
+
+    <footer>
+        <p>© 2024 Adventure Advisor. All rights reserved.</p>
+        <ul>
+          <li><a href="html/CTA.html">Plan Your Trip</a></li>
+          <li><a href="html/about.html">About Us</a></li>
+          <li><a href="html/contact.html">Contact</a></li>
+        </ul>
+        <p>Created by Blend, Urta, Edi and Robert</p>
+    </footer>
+
+    
+
+    <script src="js/index.js"></script>
+    
+    
+<body>
+
+</html>
